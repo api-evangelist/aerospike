@@ -1,0 +1,74 @@
+aid: aerospike
+name: Aerospike
+description: >-
+  Aerospike is a real-time, high-throughput, low-latency NoSQL database
+  platform built on a hybrid memory architecture that powers operational
+  systems handling petabytes of data at sub-millisecond latency. The platform
+  supports key-value, document, graph, vector, and JSON workloads with strong
+  consistency, cross-datacenter replication, and tiered storage on flash. The
+  Aerospike REST Gateway exposes the full database API (info, scan, query,
+  operate, batch, UDFs, secondary indexes) over HTTP/JSON with Basic
+  authentication forwarded to the Aerospike security subsystem.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Database
+  - NoSQL
+  - Real-Time
+  - Key-Value
+  - In-Memory
+  - Vector Database
+  - High Performance
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/aerospike/refs/heads/main/apis.yml
+created: '2026-05-11'
+modified: '2026-05-11'
+specificationVersion: '0.19'
+apis:
+  - aid: aerospike:rest-gateway
+    name: Aerospike REST Gateway
+    description: >-
+      HTTP/JSON gateway that exposes Aerospike database operations including
+      key-value reads/writes, batch, operate, scan, query, info, secondary
+      indexes, and user-defined functions. Authentication is via HTTP Basic
+      auth that maps to Aerospike-database security users when the cluster has
+      security enabled.
+    humanURL: https://aerospike.com/docs/develop/client/rest/overview/
+    baseURL: http://localhost:8080/v1
+    tags:
+      - Database
+      - REST Gateway
+      - Key-Value
+      - Operate
+      - Scan
+      - Query
+    properties:
+      - type: Documentation
+        url: https://aerospike.com/docs/develop/client/rest/overview/
+      - type: Swagger UI
+        url: https://aerospike.github.io/aerospike-rest-gateway/
+      - type: GitHub Source
+        url: https://github.com/aerospike/aerospike-rest-gateway
+      - type: Installation Guide
+        url: https://github.com/aerospike/aerospike-rest-gateway/blob/master/docs/installation-and-config.md
+
+common:
+  - type: Website
+    url: https://aerospike.com
+  - type: Documentation
+    url: https://aerospike.com/docs/
+  - type: Developer Portal
+    url: https://developer.aerospike.com
+  - type: Pricing
+    url: https://aerospike.com/pricing/
+  - type: Sign Up
+    url: https://aerospike.com/lp/try-now/
+  - type: GitHub Organization
+    url: https://github.com/aerospike
+  - type: Community
+    url: https://discuss.aerospike.com
+  - type: Support
+    url: https://aerospike.com/support/
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
