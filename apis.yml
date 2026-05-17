@@ -61,9 +61,9 @@ common:
     url: https://developer.aerospike.com
   - type: Pricing
     url: https://aerospike.com/pricing/
-  - type: Sign Up
+  - type: SignUp
     url: https://aerospike.com/lp/try-now/
-  - type: GitHub Organization
+  - type: GitHubOrganization
     url: https://github.com/aerospike
   - type: Community
     url: https://discuss.aerospike.com
