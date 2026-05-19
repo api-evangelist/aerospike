@@ -53,6 +53,8 @@ apis:
         url: https://github.com/aerospike/aerospike-rest-gateway/blob/master/docs/installation-and-config.md
 
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/aerospike-inc-
   - type: Website
     url: https://aerospike.com
   - type: Documentation
