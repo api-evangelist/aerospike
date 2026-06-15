@@ -1,0 +1,120 @@
+{
+  "item": [
+    {
+      "id": "24b8039c-9a2c-4fcf-ba57-93c914e4fd0f",
+      "name": "Cluster",
+      "description": {
+        "content": "Cluster topology and information operations",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "47fa4242-2cf7-4761-9514-9f0bfe4bcc71",
+          "name": "Get cluster information (verify gateway connectivity to the Aerospike cluster)",
+          "request": {
+            "name": "Get cluster information (verify gateway connectivity to the Aerospike cluster)",
+            "description": {},
+            "url": {
+              "path": [
+                "v1",
+                "cluster"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "facb212a-3989-4143-a7e2-c3beada9a7cb",
+      "name": "Documentation",
+      "description": {
+        "content": "Built-in interactive documentation and OpenAPI specification",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "e9d8c804-3145-45d2-8765-db9458981f71",
+          "name": "Built-in interactive Swagger UI for the REST Gateway",
+          "request": {
+            "name": "Built-in interactive Swagger UI for the REST Gateway",
+            "description": {},
+            "url": {
+              "path": [
+                "swagger-ui.html"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "b2ae06bc-18e9-4bd2-aa36-1e5a994404be",
+          "name": "Machine-readable OpenAPI specification for the running REST Gateway",
+          "request": {
+            "name": "Machine-readable OpenAPI specification for the running REST Gateway",
+            "description": {},
+            "url": {
+              "path": [
+                "v3",
+                "api-docs"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "http://localhost:8080",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "5134046c-1cf3-4723-b0a1-46b835c98d83",
+    "name": "Aerospike REST Gateway",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The Aerospike REST Gateway exposes the Aerospike database client API (cluster info, key-value, scan, query, operate, batch, UDFs, secondary indexes) over HTTP/JSON. The gateway is self-hosted alongside an Aerospike cluster; the default base URL is http://localhost:8080/v1. Interactive documentation is available at /swagger-ui.html and the OpenAPI JSON at /v3/api-docs on the running gateway.\n\nContact Support:\n Name: Aerospike",
+      "type": "text/plain"
+    }
+  }
+}
