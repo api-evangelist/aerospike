@@ -59,11 +59,11 @@ common:
     url: https://aerospike.com
   - type: Documentation
     url: https://aerospike.com/docs/
-  - type: Developer Portal
+  - type: DeveloperPortal
     url: https://developer.aerospike.com
   - type: Pricing
     url: https://aerospike.com/pricing/
-  - type: SignUp
+  - type: Signup
     url: https://aerospike.com/lp/try-now/
   - type: GitHubOrganization
     url: https://github.com/aerospike
