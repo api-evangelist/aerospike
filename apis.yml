@@ -53,6 +53,10 @@ apis:
         url: https://github.com/aerospike/aerospike-rest-gateway/blob/master/docs/installation-and-config.md
 
 common:
+  - type: DomainSecurity
+    url: security/aerospike-domain-security.yml
+  - type: Authentication
+    url: authentication/aerospike-authentication.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/aerospike-inc-
   - type: Website
@@ -71,6 +75,8 @@ common:
     url: https://discuss.aerospike.com
   - type: Support
     url: https://aerospike.com/support/
+  - url: https://aerospike.com/blog/
+    type: Blog
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com

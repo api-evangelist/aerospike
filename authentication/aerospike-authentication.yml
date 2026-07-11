@@ -1,0 +1,15 @@
+generated: '2026-07-11'
+method: derived
+source: openapi/aerospike-openapi.yml
+summary:
+  types:
+  - http
+schemes:
+- name: basicAuth
+  type: http
+  scheme: basic
+  description: HTTP Basic credentials are forwarded by the REST Gateway to the Aerospike security
+    subsystem when enabled. When Aerospike security is disabled the gateway accepts requests
+    without authentication.
+  sources:
+  - openapi/aerospike-openapi.yml
