@@ -10,7 +10,19 @@ description: >-
   operate, batch, UDFs, secondary indexes) over HTTP/JSON with Basic
   authentication forwarded to the Aerospike security subsystem.
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/aerospike.png
 tags:
   - Database
   - NoSQL
@@ -25,33 +37,51 @@ created: '2026-05-11'
 modified: '2026-05-11'
 specificationVersion: '0.19'
 apis:
-  - aid: aerospike:rest-gateway
-    name: Aerospike REST Gateway
-    description: >-
-      HTTP/JSON gateway that exposes Aerospike database operations including
-      key-value reads/writes, batch, operate, scan, query, info, secondary
-      indexes, and user-defined functions. Authentication is via HTTP Basic
-      auth that maps to Aerospike-database security users when the cluster has
-      security enabled.
-    humanURL: https://aerospike.com/docs/develop/client/rest/overview/
-    baseURL: http://localhost:8080/v1
-    tags:
-      - Database
-      - REST Gateway
-      - Key-Value
-      - Operate
-      - Scan
-      - Query
-    properties:
-      - type: Documentation
-        url: https://aerospike.com/docs/develop/client/rest/overview/
-      - type: Swagger UI
-        url: https://aerospike.github.io/aerospike-rest-gateway/
-      - type: GitHub Source
-        url: https://github.com/aerospike/aerospike-rest-gateway
-      - type: Installation Guide
-        url: https://github.com/aerospike/aerospike-rest-gateway/blob/master/docs/installation-and-config.md
-
+- aid: aerospike:rest-gateway
+  name: Aerospike REST Gateway
+  description: >-
+    HTTP/JSON gateway that exposes Aerospike database operations including key-value reads/writes, batch,
+    operate, scan, query, info, secondary indexes, and user-defined functions. Authentication is via HTTP
+    Basic auth that maps to Aerospike-database security users when the cluster has security enabled.
+  humanURL: https://aerospike.com/docs/develop/client/rest/overview/
+  baseURL: http://localhost:8080/v1
+  tags:
+  - Database
+  - REST Gateway
+  - Key-Value
+  - Operate
+  - Scan
+  - Query
+  properties:
+  - type: Documentation
+    url: https://aerospike.com/docs/develop/client/rest/overview/
+  - type: Swagger UI
+    url: https://aerospike.github.io/aerospike-rest-gateway/
+  - type: GitHub Source
+    url: https://github.com/aerospike/aerospike-rest-gateway
+  - type: Installation Guide
+    url: >-
+      https://github.com/aerospike/aerospike-rest-gateway/blob/master/docs/installation-and-config.md
+- aid: aerospike:aerospike-cluster-api
+  name: Aerospike Cluster API
+  description: Cluster topology and information operations
+  humanURL: https://aerospike.com/docs/develop/client/rest/overview/
+  baseURL: http://localhost:8080/v1
+  tags:
+  - Cluster
+  properties:
+  - type: OpenAPI
+    url: openapi/aerospike-cluster-api-openapi.yml
+- aid: aerospike:aerospike-documentation-api
+  name: Aerospike Documentation API
+  description: Built-in interactive documentation and OpenAPI specification
+  humanURL: https://aerospike.com/docs/develop/client/rest/overview/
+  baseURL: http://localhost:8080/v1
+  tags:
+  - Documentation
+  properties:
+  - type: OpenAPI
+    url: openapi/aerospike-documentation-api-openapi.yml
 common:
   - type: AgenticAccess
     url: agentic-access/aerospike-agentic-access.yml
