@@ -1,0 +1,16 @@
+{
+  "provider": "aerospike",
+  "sources": [
+    "aerospike-cluster-api-openapi.yml",
+    "aerospike-documentation-api-openapi.yml"
+  ],
+  "outputs": [
+    "aerospike-cluster-api-openapi.yml",
+    "aerospike-documentation-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
