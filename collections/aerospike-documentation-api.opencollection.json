@@ -1,0 +1,40 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Aerospike REST Gateway Cluster Documentation API",
+    "version": "1.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Documentation",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Built-in interactive Swagger UI for the REST Gateway",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://localhost:8080/swagger-ui.html"
+          },
+          "docs": "Built-in interactive Swagger UI for the REST Gateway"
+        },
+        {
+          "info": {
+            "name": "Machine-readable OpenAPI specification for the running REST Gateway",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://localhost:8080/v3/api-docs"
+          },
+          "docs": "Machine-readable OpenAPI specification for the running REST Gateway"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

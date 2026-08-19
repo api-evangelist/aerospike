@@ -1,0 +1,83 @@
+{
+  "item": [
+    {
+      "id": "207b70b5-6bf5-48e1-b097-ed6ab7fc2e14",
+      "name": "Documentation",
+      "description": {
+        "content": "Built-in interactive documentation and OpenAPI specification",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "03ce8817-8b51-494d-a0c0-9766800d870a",
+          "name": "Built-in interactive Swagger UI for the REST Gateway",
+          "request": {
+            "name": "Built-in interactive Swagger UI for the REST Gateway",
+            "description": {},
+            "url": {
+              "path": [
+                "swagger-ui.html"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "9fa97e0c-8eba-4610-8c77-32a3b78155dd",
+          "name": "Machine-readable OpenAPI specification for the running REST Gateway",
+          "request": {
+            "name": "Machine-readable OpenAPI specification for the running REST Gateway",
+            "description": {},
+            "url": {
+              "path": [
+                "v3",
+                "api-docs"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "http://localhost:8080",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "1513a24e-6af6-4843-8f34-d8856fa07612",
+    "name": "Aerospike REST Gateway Cluster Documentation API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The Aerospike REST Gateway exposes the Aerospike database client API (cluster info, key-value, scan, query, operate, batch, UDFs, secondary indexes) over HTTP/JSON. The gateway is self-hosted alongside an Aerospike cluster; the default base URL is http://localhost:8080/v1. Interactive documentation is available at /swagger-ui.html and the OpenAPI JSON at /v3/api-docs on the running gateway.\n\nContact Support:\n Name: Aerospike",
+      "type": "text/plain"
+    }
+  }
+}

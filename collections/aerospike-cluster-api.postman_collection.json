@@ -1,0 +1,58 @@
+{
+  "item": [
+    {
+      "id": "b4a66626-0d74-421c-8ed1-7dc6d85cae33",
+      "name": "Cluster",
+      "description": {
+        "content": "Cluster topology and information operations",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "ddec0b15-d8a3-4771-aff5-de1e48387033",
+          "name": "Get cluster information (verify gateway connectivity to the Aerospike cluster)",
+          "request": {
+            "name": "Get cluster information (verify gateway connectivity to the Aerospike cluster)",
+            "description": {},
+            "url": {
+              "path": [
+                "v1",
+                "cluster"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "http://localhost:8080",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "a76f1150-de4d-4e70-a079-9d724d9039f8",
+    "name": "Aerospike REST Gateway Cluster API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The Aerospike REST Gateway exposes the Aerospike database client API (cluster info, key-value, scan, query, operate, batch, UDFs, secondary indexes) over HTTP/JSON. The gateway is self-hosted alongside an Aerospike cluster; the default base URL is http://localhost:8080/v1. Interactive documentation is available at /swagger-ui.html and the OpenAPI JSON at /v3/api-docs on the running gateway.\n\nContact Support:\n Name: Aerospike",
+      "type": "text/plain"
+    }
+  }
+}
