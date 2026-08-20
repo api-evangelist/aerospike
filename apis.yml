@@ -50,6 +50,13 @@ apis:
   - REST Gateway
   - Key-Value
   - Operate
+  - Scans
+  - Query
+  tags_raw:
+  - Database
+  - REST Gateway
+  - Key-Value
+  - Operate
   - Scan
   - Query
   properties:
