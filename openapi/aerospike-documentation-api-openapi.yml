@@ -1,6 +1,6 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
-  title: Aerospike REST Gateway Cluster Documentation API
+  title: Aerospike REST Gateway Documentation API
   version: '1.0'
   description: The Aerospike REST Gateway exposes the Aerospike database client API (cluster info, key-value, scan, query, operate, batch, UDFs, secondary indexes) over HTTP/JSON. The gateway is self-hosted alongside an Aerospike cluster; the default base URL is http://localhost:8080/v1. Interactive documentation is available at /swagger-ui.html and the OpenAPI JSON at /v3/api-docs on the running gateway.
   contact:
@@ -19,12 +19,16 @@ paths:
       - Documentation
       summary: Built-in interactive Swagger UI for the REST Gateway
       security: []
+      operationId: getSwaggerUiHtml
+      x-operation-id-source: derived
   /v3/api-docs:
     get:
       tags:
       - Documentation
       summary: Machine-readable OpenAPI specification for the running REST Gateway
       security: []
+      operationId: getV3ApiDocs
+      x-operation-id-source: derived
 components:
   securitySchemes:
     basicAuth:
