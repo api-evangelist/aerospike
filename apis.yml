@@ -41,6 +41,14 @@ tags:
   - Database
   - NoSQL
   - Real-Time
+  - Key-Value Store
+  - In-Memory
+  - Vector Database
+  - High Performance
+tags_raw:
+  - Database
+  - NoSQL
+  - Real-Time
   - Key-Value
   - In-Memory
   - Vector Database
@@ -62,7 +70,7 @@ apis:
   tags:
   - Database
   - REST Gateway
-  - Key-Value
+  - Key-Value Store
   - Operate
   - Scans
   - Query
